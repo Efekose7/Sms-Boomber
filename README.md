@@ -1,31 +1,47 @@
-Efe Kose SMS Bomber V3
+ Efe Kose SMS B00MBER V2
 
-Bu proje, çoklu SMS servisleri üzerinden SMS göndermek için geliştirilmiştir. Replit ve Termux gibi ortamlarda kolayca çalıştırılabilir.
+Bu proje, SMS gönderimi için geliştirilmiş bir araçtır. Python ile yazılmıştır ve hem Termux (Android) hem de Kali Linux (Linux) üzerinde kolayca çalıştırılabilir.
 
-Kurulum (Replit)
+ Özellikler
+- Python 3 ile uyumlu
+- Kolay kurulum
+- Açık kaynak
 
-1. Bu projeyi Replit'e yükleyin veya klonlayın.
-2. `requirements.txt` dosyası otomatik olarak bağımlılıkları yükleyecektir.
-3. `main.py` dosyasını çalıştırmak için Replit arayüzünde **Run** butonuna tıklayın veya terminalde:
-   ```sh
-   python3 main.py
-   ```
+ Kurulum
 
-Özellikler
-- Çoklu SMS servisi desteği
-- Renkli ve modern log sistemi
-- Thread (çoklu istek) desteği
-- Kullanıcı dostu arayüz
+ 1. Gerekli Paketleri Yükleyin
 
-Termux veya Linux'ta Çalıştırmak için
-1. Projeyi indirin veya klonlayın.
-2. Terminalde:
-   ```sh
-   pip install -r requirements.txt
-   python3 main.py
-   ```
+**Termux için:**
+```bash
+pkg update && pkg install python git -y
+```
 
-Notlar
-- Python 3.8+ önerilir.
-- Bazı servisler IP engeli, rate limit veya ek güvenlik nedeniyle çalışmayabilir.
-- Sadece eğitim ve test amaçlı kullanınız. 
+**Kali Linux için:**
+```bash
+sudo apt update && sudo apt install python3 git -y
+```
+
+ 2. Repoyu Klonlayın
+```bash
+git clone https://github.com/kullaniciadi/Efe-Kose-SMS-B00MBER-V2.git
+cd Efe-Kose-SMS-B00MBER-V2
+```
+
+ 3. Gereksinimleri Yükleyin
+```bash
+pip install -r requirements.txt
+```
+
+ 4. Programı Başlatın
+```bash
+python main.py
+```
+
+## Notlar
+- Python 3 yüklü olmalıdır.
+- `services_config.py` dosyasını kendi servis bilgilerinize göre düzenleyebilirsiniz.
+- Herhangi bir hata ile karşılaşırsanız, lütfen bir issue açın.
+
+---
+
+**Bu proje eğitim amaçlıdır. Lütfen yasalara uygun şekilde kullanınız.** 
