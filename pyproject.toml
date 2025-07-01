@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "efe-kose-sms-bomber-v3"
+version = "1.0.0"
+description = "Çoklu SMS servisleri üzerinden toplu SMS gönderen, Replit ve Termux uyumlu modern Python uygulaması."
+authors = ["Efe Kose <efe@xxxxx.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+pyfiglet = "^1.0.2"
+user_agent = "^0.1.9"
+rich = "^13.7.1"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
