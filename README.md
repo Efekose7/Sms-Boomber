@@ -23,8 +23,8 @@ sudo apt update && sudo apt install python3 git -y
 
  2. Repoyu Klonlayın
 ```bash
-git clone https://github.com/kullaniciadi/Efe-Kose-SMS-B00MBER-V2.git
-cd Efe-Kose-SMS-B00MBER-V2
+git clone https://github.com/Efekose7/Sms-Boomber.git
+cd Sms-Boomber
 ```
 
  3. Gereksinimleri Yükleyin
